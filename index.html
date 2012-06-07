@@ -1,0 +1,70 @@
+---
+---
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{{site.title}}</title>
+  <meta name="description" content="{{site.settings.short_description.value}}">
+  <meta name="author" content="{{site.title}}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+
+  <div id="container">
+
+    <header>
+      <h1>{{site.title}}</h1>
+    </header>
+
+    <div id="main" role="main" class="spinto-editable">
+      <h2>What do you create? You should <a href="http://www.spintoapp.com">link to it</a>.</h2>
+    </div>
+
+    <h3 id="where" class="spinto-editable">Where are you now? Where are you from?</h3>
+
+    <ul>
+
+      {% if site.settings.email_address.value %}
+        <li class="contact-circle email">
+          <a href="mailto:{{site.settings.email_address.value}}"><div class='contact-inner-circle'><img src="/img/email.png" alt="Send an email" /></div></a>
+        </li>
+      {% endif %}
+
+      {% if site.settings.twitter_url.value %}
+        <li class="contact-circle email">
+          <a href="{{site.settings.twitter_url.value}}"><div class='contact-inner-circle'><img src="/img/twitter.png" alt="Find me on Twitter" /></div></a>
+        </li>
+      {% endif %}
+
+      {% if site.settings.linkedin_url.value %}
+        <li class="contact-circle email">
+          <a href="{{site.settings.linkedin_url.value}}"><div class='contact-inner-circle'><img src="/img/linkedin.png" alt="Find me on LinkedIn" /></div></a>
+        </li>
+      {% endif %}
+
+    </ul>
+
+    <footer>
+      <p style="margin-bottom:20px;">&copy; 2012 {{site.title}}</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

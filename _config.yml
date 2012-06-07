@@ -1,0 +1,17 @@
+title: John Doe
+settings:
+  short_description:
+    value: A cool kid from a cool town.
+    description: A short piece of text sometimes displayed by web browsers.
+  highlight_color:
+    value: "#FFFF66"
+    description: Links and the social buttons on this site are highlighted with this color.
+  email_address:
+    value: change-in-settings@example.com 
+    description: Your email address. Optional.
+  linkedin_url:
+    value: 
+    description: The URL for your LinkedIn account. Optional.
+  twitter_url:
+    value: 
+    description: The URL for your Twitter account. Optional.
