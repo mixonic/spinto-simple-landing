@@ -33,10 +33,11 @@
     </header>
 
     <div id="main" role="main" class="spinto-editable">
+      {% editable wysiwyg Headline %}
       <h2>What do you create? You should <a href="http://www.spintoapp.com">link to it</a>.</h2>
     </div>
 
-    <h3 id="where" class="spinto-editable">Where are you now? Where are you from?</h3>
+    <h3>{% editable simple "Where are you?" %}Where are you now? Where are you from?{% endeditable %}</h3>
 
     <ul>
 
